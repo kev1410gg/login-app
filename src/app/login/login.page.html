@@ -1,0 +1,13 @@
+<ion-content class="ion-padding">
+  <h2>Iniciar sesión</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <ion-input label="Usuario" labelPlacement="floating" fill="outline"
+               formControlName="username" class="ion-margin-bottom"></ion-input>
+    <ion-input label="Contraseña" labelPlacement="floating" fill="outline"
+               type="password" formControlName="password"></ion-input>
+    <ion-button expand="block" type="submit" class="ion-margin-top"
+                [disabled]="form.invalid || loading">
+      {{ loading ? 'Entrando...' : 'Iniciar Sesión' }}
+    </ion-button>
+  </form>
+</ion-content>

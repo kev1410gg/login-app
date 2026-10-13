@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://backend-fastapi-twxr.onrender.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": { "^/api": "" }
+  }
+}
